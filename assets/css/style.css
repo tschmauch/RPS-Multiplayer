@@ -1,0 +1,12 @@
+body {
+	background-image: url(../images/yosemite.jpg);
+	color: white;
+}
+
+.center {
+	text-align: center;
+}
+
+.large {
+	font-size: xx-large;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<nav class="navbar center large">
+		Rock Paper Scissors Multi-Player
+	</nav>
+	<div class="container">
+		<div class="row gameState">
+			<div class="col-md-8">
+				<div class="input-group" id="user-name-group">
+					<input type="text" class="form-control" placeholder="Player Name" id="username">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" id="submit">Play</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 game-box">
+				<div class="game-div" id="player-1">
+					<h1 id="player-1-name">Player 1 - Open</h1>
+					<div class="rps-image-container-1 hidden">
+						<img src="assets/images/rock.jpg" id="rock1" data-choice="rock">
+						<img src="assets/images/paper.png" id="paper1" data-choice="paper">
+						<img src="assets/images/scissors.jpg" id="scissors1" data-choice="scissors">
+					</div>
+					<div id="scores1">
+						<span class="wins" id="wins1"></span>
+						<span class="losses" id="losses1"></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 game-box">
+				<div class="game-div" id="results">
+					<h1 id="game-message"></h1>
+				</div>
+			</div>
+			<div class="col-md-4 game-box">
+				<div class="game-div" id="player-2">
+					<h1 id="player-2-name">Player 2 - Open</h1>
+					<div class="rps-image-container-2 hidden">
+						<img class="rps-images" src="assets/images/rock.jpg" id="rock2" data-choice="rock">
+						<img class="rps-images" src="assets/images/paper.png" id="paper2" data-choice="paper">
+						<img class="rps-images" src="assets/images/scissors.jpg" id="scissors2" data-choice="scissors">
+					</div>
+					<div id="scores2">
+						<span class="wins" id="wins2"></span>
+						<span class="losses" id="losses2"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8" id="message-container">
+				<div class="row message-display" id="message-window">
+					<div class="form-group">
+						<textarea class="form-control" rows="5" id="comment"></textarea>
+					</div>
+				</div>
+				<div class="row message-input-box">
+					<div class="col-lg-6">
+
+						<form action="" method="post" class="input-group">
+							<input type="text" class="form-control" id="say-something" placeholder="Say Something...">
+							<span class="input-group-btn">
+								<input class="btn btn-default" type="submit" value="Send" id="chatSubmit">
+							</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
